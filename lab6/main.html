@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>lab6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Анкета пользователя</h2>
+        </div>
+        <form class="form" name="feedback" method="POST" action="visual.php" enctype="multipart/form-data">
+            <div class="form-control">
+                <label class="form-control-label" for="name">Имя:</label>
+                <input class="form-control-input" type="text" name="name" placeholder="Имя" id="name" />
+            </div>
+            <div class="form-control">
+                <label class="form-control-label" for="email">Email:</label>
+                <input class="form-control-input" type="text" name="email" placeholder="Email" id="email" />
+            </div>
+            <div class="form-control">
+                <label class="form-control-label" for="password">Пароль:</label>
+                <input class="form-control-input" type="password" name="password" placeholder="Пароль" id="password" />
+            </div>
+            <div class="form-control">
+                <label class="form-control-label" for="RePassword">Проверка пароля</label>
+                <input class="form-control-input" type="password" name="RePassword" placeholder="Проверка пароля:" id="RePassword" />
+            </div>
+            <div class="form-control">
+                <span>Пол:</span>
+                <input type="radio" name="state" id="male" value="Мужской" />
+                <label for="male">Мужской</label>
+                <input type="radio" name="state" id="female" value="Женский" />
+                <label for="female">Женский</label>
+            </div>
+            <div class="form-control">
+                <label class="form-control-label">О себе:</label>
+                <textarea class="form-control-input" name="message"></textarea>
+            </div>
+            <div class="form-control">
+                <label class="form-control-label">Файл резюме:</label>
+                <input type="file" name="resume">
+            </div>
+            <input class="form-buttom" type="submit" name="send" value="Отправить">
+        </form>
+    </div>
+</body>
+</html>

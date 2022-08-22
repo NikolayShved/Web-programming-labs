@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>lab3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Регистрация пользователя</h2>
+    </div>
+    <script src="main.js"></script>
+    <form class="form" action="" method="post" name="registration" onsubmit="valid(this)">
+        <div class="form-control">
+            <label class="form-control-label" for="name">Имя:</label>
+            <input class="form-control-input" type="text" name="name" placeholder="Имя" id="name" />
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label class="form-control-label" for="email">Email:</label>
+            <input class="form-control-input" type="text" name="email" placeholder="Email" id="email" />
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label class="form-control-label" for="password">Пароль:</label>
+            <input class="form-control-input" type="password" name="password" placeholder="Пароль" id="password" />
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label class="form-control-label" for="RePassword">Проверка пароля</label>
+            <input class="form-control-input" type="password" name="RePassword" placeholder="Проверка пароля:" id="RePassword" />
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <span>Пол:</span>
+            <input type="radio" name="state" id="male" value="Мужской" />
+            <label for="male">Мужской</label>
+            <input type="radio" name="state" id="female" value="Женский" />
+            <label for="female">Женский</label>
+        </div>
+        <input class="form-buttom" type="submit" name="submit" value="Готово" />
+</form>
+</div>
+</body>
+</html>
